@@ -1,5 +1,2 @@
-# matches case insensitive for lowercase
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-
-# pasting with tabs doesn't perform completion
-zstyle ':completion:*' insert-tab pending
+# 需要补全系统支持，放在补全脚本中
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
