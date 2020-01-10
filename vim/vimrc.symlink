@@ -127,6 +127,8 @@ Plug 'vim-airline/vim-airline-themes'
     let g:airline#extensions#tabline#enabled = 1  " 显示窗口 tab 和 buffer
     let g:airline_theme = "neodark"
 
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     " use <tab> for trigger completion and navigate to next complete item
