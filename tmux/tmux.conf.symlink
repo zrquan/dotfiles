@@ -43,6 +43,7 @@ bind r source-file ~/.tmux.conf \; display "已更新"
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'KeitaNakamura/neodark.vim'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
@@ -51,32 +52,31 @@ run '~/.tmux/plugins/tpm/tpm'
 # 样式设置
 #=======================================
 
-set -g status-justify left
-set -g status-interval 1
-set -g status-position top
-set -g status-style bg=colour235,fg=colour6
-set -g status-left ''
-set -g status-right-length 50
-set -g status-left-length 20
-
-# 设置windows菜单颜色 Prefix+w
-setw -g clock-mode-colour colour135
-setw -g mode-style fg=colour15,bg=colour238,bold
-
-# pane border
-set -g pane-border-style fg=colour238,bg=colour235
-set -g pane-active-border-style fg=colour15,bg=colour236
-
-# 设置status面板当前windows颜色
-setw -g window-status-current-style fg=colour81,bg=colour238,bold
-setw -g window-status-current-format ' #I#[fg=colour250]:#[fg=colour255]#W#[fg=colour50]#F '
-
-# 设置status非活跃windows颜色
-setw -g window-status-style fg=colour138,bg=colour235,none
-setw -g window-status-format ' #I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F '
-
-setw -g window-status-bell-style fg=colour255,bg=colour1,bold
-
-# 设置message字体颜色
-set -g message-style fg=colour15,bg=colour236,bold
-
+#set -g status-justify left
+#set -g status-interval 1
+#set -g status-position top
+#set -g status-style bg=colour235,fg=colour6
+#set -g status-left ''
+#set -g status-right-length 50
+#set -g status-left-length 20
+#
+## 设置windows菜单颜色 Prefix+w
+#setw -g clock-mode-colour colour135
+#setw -g mode-style fg=colour15,bg=colour238,bold
+#
+## pane border
+#set -g pane-border-style fg=colour238,bg=colour235
+#set -g pane-active-border-style fg=colour15,bg=colour236
+#
+## 设置status面板当前windows颜色
+#setw -g window-status-current-style fg=colour81,bg=colour238,bold
+#setw -g window-status-current-format ' #I#[fg=colour250]:#[fg=colour255]#W#[fg=colour50]#F '
+#
+## 设置status非活跃windows颜色
+#setw -g window-status-style fg=colour138,bg=colour235,none
+#setw -g window-status-format ' #I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F '
+#
+#setw -g window-status-bell-style fg=colour255,bg=colour1,bold
+#
+## 设置message字体颜色
+#set -g message-style fg=colour15,bg=colour236,bold
