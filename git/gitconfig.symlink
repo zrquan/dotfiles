@@ -27,3 +27,6 @@
         default = simple
 [credential]
 	helper = osxkeychain
+[user]
+	name = zrquan
+	email = zrquan.0218@gmail.com

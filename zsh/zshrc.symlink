@@ -53,3 +53,4 @@ unset config_files
 
 # Notify existing users that they should migrate to another variable.
 export ZSH='$ZSH is deprecated, use either $DOTFILES or $OHMYZSH instead.'
+export PATH="$HOME/.apicheck_manager/bin:$PATH"
