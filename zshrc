@@ -48,10 +48,13 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
+# Proxy enable by default
+export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809 all_proxy=socks5://127.0.0.1:10808
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+
+export GOPATH=~/Projects/go/GOPATH
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
