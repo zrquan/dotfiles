@@ -44,3 +44,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  -
+    command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    description: Installing Oh My Zsh
+    stdout: true
