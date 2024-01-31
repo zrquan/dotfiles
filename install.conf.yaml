@@ -1,0 +1,36 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    # editor
+    ~/.vimrc: vimrc
+    ~/.ideavimrc: ideavimrc
+
+    # terminal
+    ~/.local/share/konsole/:
+      force: true
+      path: local/share/konsole/
+    ~/.config/yakuakerc: config/yakuakerc
+    ~/.tmux.conf: tmux.conf
+    ~/.p10k.zsh: p10k.zsh
+
+    # input device
+    ~/.config/libinput-gestures.conf: config/libinput-gestures.conf
+    ~/.Xmodmap: Xmodmap
+    ~/.xprofile: xprofile
+
+    ~/.local/share/color-schemes/Sweet.colors: local/share/color-schemes/Sweet.colors
+    ~/.config/lattedockrc:
+      force: true
+      path: config/lattedockrc
+    ~/.config/latte/Zrquan.layout.latte: config/latte/Zrquan.layout.latte
+
+- create:
+    - ~/Applications/
+    - ~/Projects/
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

@@ -1,0 +1,66 @@
+" Easy to enter normal mode
+inoremap df <esc>
+
+let mapleader=","
+
+" Switch tab
+nnoremap <silent> <C-h> gT
+nnoremap <silent> <C-l> gt
+
+""" Plugins  --------------------------------
+set surround
+set NERDTree
+set easymotion
+
+""" Common settings -------------------------
+set showmode
+
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=3
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+"set idearefactormode=keep
+"set clipboard+=unnamed
+
+"""" Mappings --------------------------------
+map / <Action>(Find)
+
+map <leader><leader>, <Action>(SearchEverywhere)
+
+map <leader>. <Action>(Switcher)
+map <leader>m <Action>(FileStructurePopup)
+map <leader>s <Action>(ActivateStructureToolWindow)
+
+map <leader>r <Action>(RenameElement)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+map <S-Space> <Action>(GotoNextError)
+map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+map <leader>H <Action>(ActivateVersionControlToolWindow)
+map <leader>b <Action>(ToggleBreakpointEnabled)
+map <leader>B <Action>(ToggleLineBreakpoint)
+
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
+
+map <C-S-l> <Action>(NextProjectWindow)
+map <C-S-h> <Action>(PreviousProjectWindow)
+
+map gi <Action>(GotoImplementation)
+map gs <Action>(GotoSuperMethod)
+map gk <Action>(MethodUp)
+map gj <Action>(MethodDown)
+map g] <Action>(VcsShowNextChangeMarker)
+map g[ <Action>(VcsShowPrevChangeMarker)
+map ZQ <Action>(CloseContent)
+
+nnoremap nt :NERDTree<cr>
+nnoremap nf :NERDTreeFind<cr>

@@ -1,0 +1,24 @@
+[Appearance]
+HideSkinBorders=true
+
+[Behavior]
+RememberFullscreen=true
+
+[Desktop Entry]
+DefaultProfile=zrquan.profile
+
+[Dialogs]
+FirstRun=false
+
+[KFileDialog Settings]
+Recent Files[$e]=DarkPastels.colorscheme,file:$HOME/.local/share/konsole/DarkPastels.colorscheme
+Recent URLs[$e]=file:$HOME/.local/share/konsole/
+detailViewIconSize=16
+
+[Window]
+Height=60
+KeepOpen=false
+ShowSystrayIcon=false
+ShowTabBar=false
+ShowTitleBar=false
+Width=70
