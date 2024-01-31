@@ -2,3 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "doom.d"]
+	path = doom.d
+	url = git@github.com:zrquan/doom.d.git

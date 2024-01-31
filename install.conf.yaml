@@ -6,6 +6,7 @@
 
 - link:
     # editor
+    ~/.doom.d/: doom.d/
     ~/.vimrc: vimrc
     ~/.ideavimrc: ideavimrc
 
