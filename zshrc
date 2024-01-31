@@ -63,14 +63,16 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Set personal aliases, overriding those provided by oh-my-zsh libs, plugins, and themes.
+alias clproxy="export https_proxy= http_proxy= all_proxy=" # clean proxy
+alias setproxy="export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809 all_proxy=socks5://127.0.0.1:10808"
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'" # Pipe my public key to clipboard
+alias listen="lsof -P -i -n | fzf --reverse" # 查看网络连接
+alias psf="ps aux | fzf --reverse"
+alias open="xdg-open"
+alias unzip-zh="unzip -O CP936"
+alias dils="docker images | fzf --reverse"
+alias dcip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
 
 # Powerlevel10k
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme || echo "Install powerlevel10k first (use yay)"
