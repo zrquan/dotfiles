@@ -1,0 +1,5 @@
+#+title: Dotfiles
+
+My personal EndeavourOS dotfiles with zsh, (doom)emacs, vim, tmux, plasma and more...
+
+[[file:.images/desktop_screenshot.png]]
