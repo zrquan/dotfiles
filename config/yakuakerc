@@ -15,6 +15,9 @@ Recent Files[$e]=DarkPastels.colorscheme,file:$HOME/.local/share/konsole/DarkPas
 Recent URLs[$e]=file:$HOME/.local/share/konsole/
 detailViewIconSize=16
 
+[Shortcuts]
+keep-open=Ctrl+Alt+D
+
 [Window]
 Height=60
 KeepOpen=false
