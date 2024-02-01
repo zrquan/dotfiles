@@ -25,6 +25,11 @@
     ~/.Xmodmap: Xmodmap
     ~/.xprofile: xprofile
 
+    # 㞢
+    ~/.config/ibus/rime/:
+      glob: true
+      path: ibus-rime/*
+
     # git
     ~/:
       glob: true
@@ -49,3 +54,7 @@
     command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     description: Installing Oh My Zsh
     stdout: true
+  # -
+  #   command: curl -fsSL https://raw.githubusercontent.com/rime/plum/master/rime-install | bash -s -- iDvel/rime-ice:others/recipes/full
+  #   description: Rime配置：雾凇拼音 | 长期维护的简体词库
+  #   stdout: true
