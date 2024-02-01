@@ -48,6 +48,15 @@
     - ~/Applications/
     - ~/Projects/
 
+- yay:
+  - v2ray
+  - v2raya-bin
+  - ttf-lxgw-wenkai
+  - ibus
+  - ibus-rime
+  - emacs
+  - zsh-theme-powerlevel10k-git
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   -
