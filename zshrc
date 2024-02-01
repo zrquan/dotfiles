@@ -81,3 +81,12 @@ alias dcip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme || echo "Install powerlevel10k first (use yay)"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# init pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# init jenv
+eval "$(jenv init -)"
