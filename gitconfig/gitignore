@@ -1,7 +1,4 @@
 .DS_Store
 *~
 *.swp
-
-flycheck_*.el
-
 *.local
