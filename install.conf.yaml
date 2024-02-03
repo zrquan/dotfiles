@@ -56,10 +56,24 @@
   - v2ray
   - v2raya-bin
   - ttf-lxgw-wenkai
+  - noto-fonts-emoji
   - ibus
   - ibus-rime
   - emacs
+  - ripgrep
+  - fd
+  - xclip
+  - autojump
+  - yakuake
   - zsh-theme-powerlevel10k-git
+  - tmux-mem-cpu-load
+  - docker
+  - docker-compose
+  - pyenv
+  - jenv
+  - maven
+  - dropbox
+  - google-chrome
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
