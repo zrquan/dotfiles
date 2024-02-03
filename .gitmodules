@@ -5,6 +5,7 @@
 [submodule "doom.d"]
 	path = doom.d
 	url = git@github.com:zrquan/doom.d.git
+	ignore = dirty
 [submodule "dotbot-yay"]
 	path = dotbot-yay
 	url = git@github.com:zrquan/dotbot-yay.git
