@@ -9,6 +9,7 @@
 
     # editor
     ~/.doom.d/: doom.d/
+    ~/.config/systemd/user/emacs.service: config/systemd/user/emacs.service
     ~/.vimrc: vimrc
     ~/.ideavimrc: ideavimrc
 
