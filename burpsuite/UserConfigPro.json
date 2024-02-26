@@ -119,7 +119,7 @@
                     "errors":"ui",
                     "extension_file":"bapps/9abaa233088242e8be252cd4ff534988/build/libs/turbo-intruder-all.jar",
                     "extension_type":"java",
-                    "loaded":false,
+                    "loaded":true,
                     "name":"Turbo Intruder",
                     "output":"ui"
                 },
@@ -147,7 +147,7 @@
                     "errors":"ui",
                     "extension_file":"bapps/f9bbac8c4acf4aefa4d7dc92a991af2f/Autorize.py",
                     "extension_type":"python",
-                    "loaded":false,
+                    "loaded":true,
                     "name":"Autorize",
                     "output":"ui"
                 },
@@ -172,7 +172,7 @@
                     "output":"ui"
                 },
                 {
-                    "bapp_serial_version":23,
+                    "bapp_serial_version":26,
                     "bapp_uuid":"f923cbf91698420890354c1d8958fee6",
                     "errors":"ui",
                     "extension_file":"bapps/f923cbf91698420890354c1d8958fee6/target/JWT4B-jar-with-dependencies.jar",
@@ -195,7 +195,7 @@
                     "errors":"ui",
                     "extension_file":"/home/zrquan/Applications/burpsuite-ext/HaE-2.5.11-J9.jar",
                     "extension_type":"java",
-                    "loaded":true,
+                    "loaded":false,
                     "name":"HaE (2.5.11) - Highlighter and Extractor",
                     "output":"ui"
                 }
