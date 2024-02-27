@@ -17,6 +17,7 @@ detailViewIconSize=16
 
 [Shortcuts]
 keep-open=Ctrl+Alt+D
+view-full-screen=F11
 
 [Window]
 Height=60
