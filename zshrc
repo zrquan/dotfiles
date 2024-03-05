@@ -54,7 +54,7 @@ export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809 all_
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
-export GOPATH=~/Projects/go/GOPATH
+export GOPATH=~/.local/share/go
 export PATH=$GOPATH/bin:$PATH
 
 # Preferred editor for local and remote sessions
