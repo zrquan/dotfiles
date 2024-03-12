@@ -22,13 +22,24 @@
     ~/.p10k.zsh: p10k.zsh
 
     # input device
+    ~/.config/environment.d/: config/environment.d/
     ~/.config/libinput-gestures.conf: config/libinput-gestures.conf
     ~/.config/kxkbrc: config/kxkbrc
 
     # 㞢
-    ~/.config/ibus/rime/:
+    ~/.config/fcitx5/profile:
+      force: true
+      path: config/fcitx5/profile
+    ~/.config/fcitx5/conf/:
       glob: true
-      path: ibus-rime/*
+      force: true
+      path: config/fcitx5/conf/*.conf
+    ~/.local/share/fcitx5/rime/:
+      glob: true
+      path: local/share/fcitx5/rime/*
+    ~/.local/share/fcitx5/themes/:
+      glob: true
+      path: local/share/fcitx5/themes/*
 
     # git
     ~/:
@@ -57,8 +68,8 @@
   - v2raya-bin
   - ttf-lxgw-wenkai
   - noto-fonts-emoji
-  - ibus
-  - ibus-rime
+  - fcitx5-im
+  - fcitx5-rime
   - emacs
   - ripgrep
   - fd

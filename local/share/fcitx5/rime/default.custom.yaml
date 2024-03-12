@@ -1,0 +1,27 @@
+patch:
+  schema_list:
+    - schema: double_pinyin          # 自然码双拼
+    - schema: rime_ice               # 雾凇拼音（全拼）
+  menu/page_size: 5
+
+  # 中英文切换方式
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: clear
+    Shift_L: commit_code
+    Shift_R: commit_code
+
+  key_binder:
+    bindings:
+      - { when: composing, accept: Control+g, send: Escape }
+      - { when: has_menu, accept: comma, send: Up }
+      - { when: has_menu, accept: period, send: Down }
+      - { when: paging, accept: Control+comma, send: Page_Up }
+      - { when: has_menu, accept: Control+period, send: Page_Down }
+
+  switcher:
+    hotkeys:
+      - Control+grave
+      - Alt+grave
