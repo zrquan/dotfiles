@@ -23,8 +23,7 @@
 
     # input device
     ~/.config/libinput-gestures.conf: config/libinput-gestures.conf
-    ~/.Xmodmap: Xmodmap
-    ~/.xprofile: xprofile
+    ~/.config/kxkbrc: config/kxkbrc
 
     # 㞢
     ~/.config/ibus/rime/:
