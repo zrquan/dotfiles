@@ -1,7 +1,8 @@
 [Appearance]
 AntiAliasFonts=true
 ColorScheme=DarkPastels
-Font=DejaVu Sans Mono,14,-1,5,50,0,0,0,0,0
+Font=FiraCode Nerd Font Mono Med,14,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Regular
+UseFontLineChararacters=false
 
 [Cursor Options]
 CursorShape=0

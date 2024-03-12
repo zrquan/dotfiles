@@ -1,9 +1,6 @@
 [Appearance]
 HideSkinBorders=true
 
-[Behavior]
-RememberFullscreen=true
-
 [Desktop Entry]
 DefaultProfile=zrquan.profile
 
@@ -17,12 +14,11 @@ detailViewIconSize=16
 
 [Shortcuts]
 keep-open=Ctrl+Alt+D
-view-full-screen=F11
 
 [Window]
-Height=60
+Height=57
 KeepOpen=false
 ShowSystrayIcon=false
 ShowTabBar=false
 ShowTitleBar=false
-Width=70
+Width=80
