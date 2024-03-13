@@ -70,21 +70,79 @@
   - noto-fonts-emoji
   - fcitx5-im
   - fcitx5-rime
-  - emacs
-  - ripgrep
-  - fd
-  - xclip
+  - wl-clipboard
   - autojump
   - yakuake
   - zsh-theme-powerlevel10k-git
+  - tmux
   - tmux-mem-cpu-load
   - docker
   - docker-compose
   - pyenv
   - jenv
   - maven
-  - dropbox
   - google-chrome
+  - go
+
+  ## Emacs
+  - emacs
+  - ripgrep
+  - fd
+  - nodejs
+  - npm
+  - stardict
+  - sdcv
+
+  ## 以下软件包请自行选择下载
+  # - dropbox
+  # - plasma-systemmonitor
+  # - filelight
+  # - linuxqq
+  # - intellij-idea-ce
+  # - pycharm-community-jre
+  # - visual-studio-code-bin
+  # - wemeet-bin
+  # - baidunetdisk-bin
+  # - dbeaver
+
+  # - wps-office
+  # - wps-office-mui-zh-cn
+  # - ttf-wps-fonts
+  # - libtiff5                # PDF
+
+  # - libinput-gestures       # 1. sudo gpasswd -a $USER input
+  # - xdotool                 # 2. libinput-gestures-setup autostart start
+  # - wmctrl
+
+  ## System python packages
+  # - ipython
+  # - python-pytest
+  # - python-aiohttp
+  # - python-black
+  # - python-isort
+  # - python-pre-commit
+  # - python-pipreqs
+  # - python-poetry
+  # - python-grip             # Preview GitHub Markdown files like Readme
+
+  # - natapp
+  # - nmap
+  # - proxychains-ng
+  # - tcpdump
+  # - wireshark-qt
+  # - freerdp
+  # - android-studio          # CTF
+  # - iptux                   # CTF
+  # - ciphey                  # CTF
+  # - sqlmap
+  # - dirsearch
+  # - nuclei-bin
+  # - pocsuite3
+
+  # - wine
+  # - winetricks
+  # - wine-mono
+  # - wine_gecko
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
