@@ -14,9 +14,8 @@
     ~/.ideavimrc: ideavimrc
 
     # terminal
-    ~/.local/share/konsole/:
-      force: true
-      path: local/share/konsole/
+    ~/.local/share/konsole/zrquan.profile: local/share/konsole/zrquan.profile
+    ~/.local/share/konsole/DarkPastels.colorscheme: local/share/konsole/DarkPastels.colorscheme
     ~/.config/yakuakerc: config/yakuakerc
     ~/.tmux.conf: tmux.conf
     ~/.p10k.zsh: p10k.zsh
