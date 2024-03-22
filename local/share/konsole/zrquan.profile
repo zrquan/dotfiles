@@ -1,6 +1,7 @@
 [Appearance]
 AntiAliasFonts=true
 ColorScheme=DarkPastels
+EmojiFont=Noto Color Emoji,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Font=FiraCode Nerd Font Mono Med,14,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Regular
 UseFontLineChararacters=false
 
