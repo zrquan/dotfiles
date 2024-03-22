@@ -65,3 +65,6 @@ map ZQ <Action>(CloseContent)
 
 nnoremap nt :NERDTree<cr>
 nnoremap nf :NERDTreeFind<cr>
+
+let g:NERDTreeMapActivateNode="l"
+let g:NERDTreeMapCloseDir="h"
