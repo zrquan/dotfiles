@@ -2,3 +2,6 @@
 *~
 *.swp
 *.local
+
+**/__pycache__/
+*.pyc
