@@ -107,6 +107,7 @@
   # - wps-office
   # - wps-office-mui-zh-cn
   # - ttf-wps-fonts
+  # - ttf-ms-fonts            # Microsft Fonts
   # - libtiff5                # PDF
 
   # - libinput-gestures       # 1. sudo gpasswd -a $USER input
@@ -124,6 +125,7 @@
   # - python-poetry
   # - python-grip             # Preview GitHub Markdown files like Readme
 
+  ## Hacking
   # - natapp
   # - nmap
   # - proxychains-ng
