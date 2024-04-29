@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Get the public IP address.
+
+curl cip.cc

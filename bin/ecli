@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+emacs --batch --eval '(while t (message "%s" (eval (read (read-string "> ")))))'
