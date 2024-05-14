@@ -51,6 +51,9 @@ source $ZSH/oh-my-zsh.sh
 # Proxy enable by default
 export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809 all_proxy=socks5://127.0.0.1:10808
 
+# Enhance fzf
+export FZF_DEFAULT_OPTS="--border --multi --info inline-right --layout reverse --marker ▏ --pointer ▌ --prompt '▌ ' --highlight-line --color gutter:-1,selected-bg:238,selected-fg:146,current-fg:189"
+
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
@@ -71,11 +74,11 @@ fi
 alias clproxy="export https_proxy= http_proxy= all_proxy=" # clean proxy
 alias setproxy="export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809 all_proxy=socks5://127.0.0.1:10808"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'" # Pipe my public key to clipboard
-alias listen="lsof -P -i -n | fzf --reverse" # 查看网络连接
-alias psf="ps aux | fzf --reverse"
+alias listen="lsof -P -i -n | fzf" # 查看网络连接
+alias psf="ps aux | fzf"
 alias open="xdg-open"
 alias unzip-zh="unzip -O CP936"
-alias dils="docker images | fzf --reverse"
+alias dils="docker images | fzf"
 alias dcip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
 
 # Powerlevel10k
