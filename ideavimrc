@@ -1,11 +1,11 @@
 " Easy to enter normal mode
 inoremap df <esc>
 
-let mapleader=","
+let mapleader=" "
 
 " Switch tab
-nnoremap <silent> <C-h> gT
-nnoremap <silent> <C-l> gt
+nnoremap <silent> [f gT
+nnoremap <silent> ]f gt
 
 """ Plugins  --------------------------------
 set surround
@@ -34,20 +34,21 @@ set ideastatusicon=gray
 """" Mappings --------------------------------
 map / <Action>(Find)
 
-map <leader><leader>, <Action>(SearchEverywhere)
+map <leader>: <Action>(SearchEverywhere)
 
-map <leader>. <Action>(Switcher)
+map <leader>ff <Action>(Switcher)
 map gO <Action>(FileStructurePopup)
-map <leader>s <Action>(ActivateStructureToolWindow)
+map <leader>S <Action>(ActivateStructureToolWindow)
 
 map <leader>r <Action>(RenameElement)
 map <leader>Z <Action>(ToggleDistractionFreeMode)
-map <S-Space> <Action>(GotoNextError)
+map ]e <Action>(GotoNextError)
 map <leader>gg <Action>(Vcs.Show.Local.Changes)
-map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
-map <leader>H <Action>(ActivateVersionControlToolWindow)
-map <leader>b <Action>(ToggleBreakpointEnabled)
-map <leader>B <Action>(ToggleLineBreakpoint)
+map <leader>gL <Action>(Vcs.ShowTabbedFileHistory)
+map <leader>gl <Action>(ActivateVersionControlToolWindow)
+map ,b <Action>(ToggleBreakpointEnabled)
+map ,B <Action>(ToggleLineBreakpoint)
+map <leader>ht <Action>(ChangeLaf)
 
 map <C-o> <Action>(Back)
 map <C-i> <Action>(Forward)
@@ -63,8 +64,18 @@ map g] <Action>(VcsShowNextChangeMarker)
 map g[ <Action>(VcsShowPrevChangeMarker)
 map ZQ <Action>(CloseContent)
 
-nnoremap nt :NERDTree<cr>
-nnoremap nf :NERDTreeFind<cr>
+map mm <Action>(ToggleBookmark)
+map ma <Action>(ToggleBookmarkA)
+map 'a <Action>(GotoBookmarkA)
+map ms <Action>(ToggleBookmarkS)
+map 's <Action>(GotoBookmarkS)
+map md <Action>(ToggleBookmarkD)
+map 'd <Action>(GotoBookmarkD)
+map mf <Action>(ToggleBookmarkF)
+map 'f <Action>(GotoBookmarkF)
+
+nnoremap <leader>oo :NERDTree<cr>
+nnoremap <leader>of :NERDTreeFind<cr>
 
 let g:NERDTreeMapActivateNode="l"
 let g:NERDTreeMapCloseDir="h"

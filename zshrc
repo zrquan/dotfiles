@@ -80,6 +80,7 @@ alias open="xdg-open"
 alias unzip-zh="unzip -O CP936"
 alias dils="docker images | fzf"
 alias dcip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
+alias pch="proxychains -q"
 
 # Powerlevel10k
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme || echo "Install powerlevel10k first (use yay)"
