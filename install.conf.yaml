@@ -71,7 +71,6 @@
   - fcitx5-im
   - fcitx5-rime
   - wl-clipboard
-  - autojump
   - yakuake
   - zsh-theme-powerlevel10k-git
   - tmux
@@ -84,10 +83,16 @@
   - google-chrome
   - go
 
+  ## Terminal tools
+  - autojump
+  - bat       # better cat
+  - btop      # better [h]top
+  - fd        # better find
+  - ripgrep   # better grep
+  - duf       # better df
+
   ## Emacs
   - emacs
-  - ripgrep
-  - fd
   - nodejs
   - npm
   - stardict
