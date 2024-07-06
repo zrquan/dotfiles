@@ -15,7 +15,8 @@
 
     # terminal
     ~/.local/share/konsole/zrquan.profile: local/share/konsole/zrquan.profile
-    ~/.local/share/konsole/DarkPastels.colorscheme: local/share/konsole/DarkPastels.colorscheme
+    # https://github.com/catppuccin/konsole
+    ~/.local/share/konsole/Catppuccin-Mocha.colorscheme: local/share/konsole/Catppuccin-Mocha.colorscheme
     ~/.config/yakuakerc: config/yakuakerc
     ~/.tmux.conf: tmux.conf
     ~/.p10k.zsh: p10k.zsh
@@ -74,7 +75,7 @@
   - yakuake
   - zsh-theme-powerlevel10k-git
   - tmux
-  - tmux-mem-cpu-load
+  # - tmux-mem-cpu-load
   - docker
   - docker-compose
   - pyenv

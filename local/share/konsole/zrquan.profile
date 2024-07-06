@@ -1,8 +1,10 @@
 [Appearance]
-AntiAliasFonts=true
-ColorScheme=DarkPastels
-EmojiFont=Noto Color Emoji,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-Font=FiraCode Nerd Font Mono Med,14,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Regular
+AntiAliasFonts=false
+BoldIntense=true
+ColorScheme=Catppuccin-Mocha
+EmojiFont=Noto Color Emoji,15,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Font=FiraCode Nerd Font Mono Med,15,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Regular
+UseFontBrailleChararacters=true
 UseFontLineChararacters=false
 
 [Cursor Options]
