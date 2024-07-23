@@ -16,9 +16,9 @@ detailViewIconSize=16
 keep-open=Ctrl+Alt+D
 
 [Window]
-Height=100
+Height=75
 KeepOpen=false
 ShowSystrayIcon=false
 ShowTabBar=false
 ShowTitleBar=false
-Width=100
+Width=80
