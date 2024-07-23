@@ -42,7 +42,7 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git emacs autojump fzf docker docker-compose)
+plugins=(git emacs fzf docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,3 +98,5 @@ eval "$(pyenv virtualenv-init -)"
 
 # init jenv
 eval "$(jenv init -)"
+
+eval "$(zoxide init zsh)"

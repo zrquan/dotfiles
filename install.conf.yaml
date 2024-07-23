@@ -82,7 +82,7 @@
   - go
 
   ## Terminal tools
-  - autojump
+  - zoxide
   - bat       # better cat
   - btop      # better [h]top
   - fd        # better find
