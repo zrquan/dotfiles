@@ -8,9 +8,10 @@ DefaultProfile=zrquan.profile
 FirstRun=false
 
 [KFileDialog Settings]
-Recent Files[$e]=DarkPastels.colorscheme,file:$HOME/.local/share/konsole/DarkPastels.colorscheme
-Recent URLs[$e]=file:$HOME/.local/share/konsole/
 detailViewIconSize=16
+
+[Notification Messages]
+ShowPasteHugeTextWarning=false
 
 [Shortcuts]
 keep-open=Ctrl+Alt+D
@@ -21,4 +22,4 @@ KeepOpen=false
 ShowSystrayIcon=false
 ShowTabBar=false
 ShowTitleBar=false
-Width=80
+Width=85
