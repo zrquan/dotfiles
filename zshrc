@@ -87,12 +87,6 @@ alias dils="docker images | fzf"
 alias dcip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
 alias pch="proxychains -q"
 
-# init pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 # init jenv
 eval "$(jenv init -)"
 

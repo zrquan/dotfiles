@@ -75,7 +75,6 @@
   # - tmux-mem-cpu-load
   - docker
   - docker-compose
-  - pyenv
   - jenv
   - maven
   - google-chrome
@@ -117,17 +116,6 @@
   # - libinput-gestures       # 1. sudo gpasswd -a $USER input
   # - xdotool                 # 2. libinput-gestures-setup autostart start
   # - wmctrl
-
-  ## System python packages
-  # - ipython
-  # - python-pytest
-  # - python-aiohttp
-  # - python-black
-  # - python-isort
-  # - python-pre-commit
-  # - python-pipreqs
-  # - python-poetry
-  # - python-grip             # Preview GitHub Markdown files like Readme
 
   ## Hacking
   # - natapp
