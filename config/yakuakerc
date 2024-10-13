@@ -17,9 +17,8 @@ ShowPasteHugeTextWarning=false
 keep-open=Ctrl+Alt+D
 
 [Window]
-Height=75
+Height=80
 KeepOpen=false
 ShowSystrayIcon=false
 ShowTabBar=false
 ShowTitleBar=false
-Width=85

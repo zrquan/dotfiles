@@ -82,10 +82,12 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 alias listen="lsof -P -i -n | fzf" # 查看网络连接
 alias psf="ps aux | fzf"
 alias open="xdg-open"
-alias unzip-zh="unzip -O CP936"
 alias dils="docker images | fzf"
 alias dcip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
 alias pch="proxychains -q"
+alias magit='te -e "(magit-status \"$(git rev-parse --show-toplevel)\")"; if [[ -f `which osascript` ]]; then osascript -e "tell application \"Emacs\" to activate"; fi'
+alias vv='source .venv/bin/activate'
+alias cs='cheat -c'
 
 # init jenv
 eval "$(jenv init -)"
