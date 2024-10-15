@@ -22,3 +22,4 @@ KeepOpen=false
 ShowSystrayIcon=false
 ShowTabBar=false
 ShowTitleBar=false
+Width=80

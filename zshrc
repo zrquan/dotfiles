@@ -50,14 +50,40 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# Proxy enable by default
-export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809 all_proxy=socks5://127.0.0.1:10808
+if [ "$XDG_SESSION_TYPE" = "x11" ]; then
+  COPY="xclip -sel clip"
+elif [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+  COPY="wl-copy"
+else
+  echo "Unknown graphical environment."
+  COPY=""
+fi
 
 # Enhance fzf
-export FZF_DEFAULT_OPTS="--border --multi --info inline-right --layout reverse --marker ▏ --pointer ▌ --prompt '▌ ' --highlight-line \
---color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+export FZF_DEFAULT_OPTS="
+  --color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796
+  --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6
+  --color=marker:#b7bdf8,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796
+  --color=selected-bg:#494d64
+  --marker ▏ --pointer ▌ --prompt '▌ '
+  --highlight-line
+  --layout reverse
+  --info inline-right
+  --border
+  --multi"
+
+# Preview file content using bat (https://github.com/sharkdp/bat)
+export FZF_CTRL_T_OPTS="
+  --height 60%
+  --walker-skip .git,node_modules,target
+  --preview 'bat -n --color=always {}'
+  --bind 'ctrl-/:change-preview-window(down|hidden|)'"
+
+# CTRL-Y to copy the command into clipboard using pbcopy
+export FZF_CTRL_R_OPTS="
+  --bind 'ctrl-y:execute-silent(echo -n {2..} | $COPY)+abort'
+  --color header:italic
+  --header 'Press CTRL-Y to copy command into clipboard'"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
