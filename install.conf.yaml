@@ -60,8 +60,8 @@
     - ~/Projects/
 
 - yay:
-  - v2ray
-  - v2raya-bin
+  - dae
+  - daed
   - ttf-lxgw-wenkai
   - noto-fonts-emoji
   - fcitx5-im
@@ -70,12 +70,16 @@
   - yakuake
   - zsh-theme-powerlevel10k-git
   - tmux
-  # - tmux-mem-cpu-load
   - docker
   - docker-compose
-  - jenv
-  - maven
   - google-chrome
+
+  ## Python
+  - uv
+  - ruff
+  - ruff-lsp
+
+  ## Go
   - go
 
   ## Terminal tools
@@ -85,9 +89,11 @@
   - fd        # better find
   - ripgrep   # better grep
   - duf       # better df
+  - navi
+  - eza       # better ls
 
   ## Emacs
-  - emacs
+  - emacs-nativecomp
   - nodejs
   - npm
   - stardict
@@ -104,6 +110,9 @@
   # - wemeet-bin
   # - baidunetdisk-bin
   # - dbeaver
+
+  # - jenv
+  # - maven
 
   # - wps-office
   # - wps-office-mui-zh-cn

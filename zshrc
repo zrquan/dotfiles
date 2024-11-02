@@ -8,7 +8,7 @@ fi
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme || echo "Install powerlevel10k first (use yay)"
 
 # Add .dotfiles/bin directory to $PATH.
-export PATH=$HOME/.dotfiles/bin:$PATH
+export PATH=$HOME/.dotfiles/bin:$HOME/.config/emacs/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -102,18 +102,18 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs, plugins, and themes.
-alias clproxy="export https_proxy= http_proxy= all_proxy=" # clean proxy
-alias setproxy="export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809 all_proxy=socks5://127.0.0.1:10808"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'" # Pipe my public key to clipboard
 alias listen="lsof -P -i -n | fzf" # 查看网络连接
 alias psf="ps aux | fzf"
 alias open="xdg-open"
-alias dils="docker images | fzf"
-alias dcip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
-alias pch="proxychains -q"
-alias magit='te -e "(magit-status \"$(git rev-parse --show-toplevel)\")"; if [[ -f `which osascript` ]]; then osascript -e "tell application \"Emacs\" to activate"; fi'
-alias vv='source .venv/bin/activate'
-alias cs='cheat -c'
+alias magit='emacs -e "(magit-status \"$(git rev-parse --show-toplevel)\")"'
+alias vv="source .venv/bin/activate"
+alias cat="bat -P"
+alias ll="eza --long --icons --git"
+
+alias dils="docker images | fzf --bind 'ctrl-d:become(docker rmi {3})' --header 'Press CTRL-D to delete the image'"
+alias dcls="docker ps | fzf --bind 'ctrl-d:become(docker rm -f {1})' --header 'Press CTRL-D to remove the container'"
+alias dcip="docker ps | fzf --bind 'enter:become(docker inspect {1} | rg --trim '\"IPv4Address\"')'"
 
 # init jenv
 eval "$(jenv init -)"
