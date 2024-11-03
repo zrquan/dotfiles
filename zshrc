@@ -109,7 +109,14 @@ alias open="xdg-open"
 alias magit='emacs -e "(magit-status \"$(git rev-parse --show-toplevel)\")"'
 alias vv="source .venv/bin/activate"
 alias cat="bat -P"
-alias ll="eza --long --icons --git"
+
+alias ll="eza -l --icons --group-directories-first"
+alias la="eza -al --icons --group-directories-first"
+alias lt="eza -lr --sort=modified --icons"
+alias lf="eza -fl --icons"
+alias lfa="eza -afl --icons"
+alias ld="eza -Dl --icons"
+alias lda="eza -aDl --icons"
 
 alias dils="docker images | fzf --bind 'ctrl-d:become(docker rmi {3})' --header 'Press CTRL-D to delete the image'"
 alias dcls="docker ps | fzf --bind 'ctrl-d:become(docker rm -f {1})' --header 'Press CTRL-D to remove the container'"
