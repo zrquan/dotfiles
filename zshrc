@@ -8,7 +8,7 @@ fi
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme || echo "Install powerlevel10k first (use yay)"
 
 # Add .dotfiles/bin directory to $PATH.
-export PATH=$HOME/.dotfiles/bin:$HOME/.config/emacs/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/.dotfiles/bin:$HOME/.config/emacs/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -108,7 +108,7 @@ alias psf="ps aux | fzf"
 alias open="xdg-open"
 alias magit='emacs -e "(magit-status \"$(git rev-parse --show-toplevel)\")"'
 alias vv="source .venv/bin/activate"
-alias cat="bat -P"
+alias cat="bat -p --theme=base16"
 
 alias ll="eza -l --icons --group-directories-first"
 alias la="eza -al --icons --group-directories-first"
@@ -119,8 +119,7 @@ alias ld="eza -Dl --icons"
 alias lda="eza -aDl --icons"
 
 alias dils="docker images | fzf --bind 'ctrl-d:become(docker rmi {3})' --header 'Press CTRL-D to delete the image'"
-alias dcls="docker ps | fzf --bind 'ctrl-d:become(docker rm -f {1})' --header 'Press CTRL-D to remove the container'"
-alias dcip="docker ps | fzf --bind 'enter:become(docker inspect {1} | rg --trim '\"IPv4Address\"')'"
+# alias dcls="docker ps | fzf --bind 'ctrl-d:become(docker rm -f {1})' --header 'Press CTRL-D to remove the container'"
 
 # init jenv
 eval "$(jenv init -)"

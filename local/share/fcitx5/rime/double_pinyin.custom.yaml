@@ -1,3 +1,7 @@
 # 默认使用英文输入
 patch:
   switches/@0/reset: 1
+  punctuator:
+    import_preset: default
+    half_shape:
+      "\"": ["「", "」"]

@@ -11,7 +11,7 @@ UseFontLineChararacters=false
 CursorShape=0
 
 [General]
-Command=/bin/zsh -c "tmux attach || tmux"
+Command=/usr/bin/zsh
 DimWhenInactive=false
 Environment=TERM=xterm-256color,COLORTERM=truecolor
 Name=zrquan

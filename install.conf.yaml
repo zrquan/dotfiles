@@ -25,6 +25,7 @@
     ~/.config/environment.d/: config/environment.d/
     ~/.config/libinput-gestures.conf: config/libinput-gestures.conf
     ~/.config/kxkbrc: config/kxkbrc
+    ~/.config/kglobalshortcutsrc: config/kglobalshortcutsrc
 
     # 㞢
     ~/.config/fcitx5/profile:
@@ -103,6 +104,7 @@
   # - plasma-systemmonitor
   # - filelight
   # - linuxqq
+  # - wechat-bin
   # - intellij-idea-ce
   # - pycharm-community-jre
   # - visual-studio-code-bin

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker ps | fzf --bind 'enter:become(docker inspect {1} | rg --trim -e "\"IPv?\d?Address\"")'
