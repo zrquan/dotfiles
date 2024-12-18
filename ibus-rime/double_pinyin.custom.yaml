@@ -1,3 +1,0 @@
-# 默认使用英文输入
-patch:
-  switches/@0/reset: 1

@@ -4,4 +4,5 @@ patch:
   punctuator:
     import_preset: default
     half_shape:
-      "\"": ["「", "」"]
+      "[": "「"
+      "]": "」"
