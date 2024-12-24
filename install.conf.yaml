@@ -31,10 +31,11 @@
     ~/.config/fcitx5/profile:
       force: true
       path: config/fcitx5/profile
-    ~/.config/fcitx5/conf/:
-      glob: true
-      force: true
-      path: config/fcitx5/conf/*.conf
+    # FIXME: fcitx5 修改配置会生成新文件
+    # ~/.config/fcitx5/conf/:
+    #   glob: true
+    #   force: true
+    #   path: config/fcitx5/conf/*.conf
     ~/.local/share/fcitx5/rime/:
       glob: true
       path: local/share/fcitx5/rime/*
