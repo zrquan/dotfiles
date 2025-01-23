@@ -2,7 +2,7 @@
 AntiAliasFonts=false
 BoldIntense=true
 ColorScheme=Catppuccin-Mocha
-EmojiFont=Noto Color Emoji,15,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+EmojiFont=Noto Color Emoji,16,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Font=FiraCode Nerd Font Mono Med,15,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Regular
 UseFontBrailleChararacters=true
 UseFontLineChararacters=false
@@ -11,7 +11,7 @@ UseFontLineChararacters=false
 CursorShape=0
 
 [General]
-Command=/usr/bin/zsh
+Command=/bin/zsh -c "tmux attach || tmux"
 DimWhenInactive=false
 Environment=TERM=xterm-256color,COLORTERM=truecolor
 Name=zrquan
