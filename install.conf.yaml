@@ -20,11 +20,14 @@
     ~/.config/yakuakerc: config/yakuakerc
     ~/.tmux.conf: tmux.conf
     ~/.p10k.zsh: p10k.zsh
+    ~/.config/navi/config.yaml: config/navi/config.yaml
 
     # input device
     ~/.config/environment.d/: config/environment.d/
     ~/.config/libinput-gestures.conf: config/libinput-gestures.conf
-    ~/.config/kxkbrc: config/kxkbrc
+    ~/.config/kxkbrc:
+      force: true
+      path: config/kxkbrc
     ~/.config/kglobalshortcutsrc: config/kglobalshortcutsrc
 
     # 㞢
@@ -74,6 +77,7 @@
   - docker
   - docker-compose
   - google-chrome
+  - thunderbird-bin
 
   ## Python
   - uv
@@ -90,7 +94,7 @@
   - fd        # better find
   - ripgrep   # better grep
   - duf       # better df
-  - navi
+  - navi      # better tldr
   - eza       # better ls
 
   ## Emacs
@@ -116,11 +120,10 @@
   # - jenv
   # - maven
 
-  # - wps-office
-  # - wps-office-mui-zh-cn
+  - wps-office-cn
+  - wps-office-mui-zh-cn
   # - ttf-wps-fonts
   # - ttf-ms-fonts            # Microsft Fonts
-  # - libtiff5                # PDF
 
   # - libinput-gestures       # 1. sudo gpasswd -a $USER input
   # - xdotool                 # 2. libinput-gestures-setup autostart start

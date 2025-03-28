@@ -262,6 +262,9 @@ switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
 
+[services][emacsclient.desktop]
+_launch=Ctrl+Alt+E
+
 [services][org-capture.desktop]
 _launch=Ctrl+Alt+N
 

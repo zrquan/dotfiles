@@ -1,7 +1,10 @@
 patch:
-  # switches/@0/reset: 1
+  # 默认英文输入
+  # https://github.com/rime/weasel/issues/20
+  switches/@0/reset: 1
   punctuator:
     import_preset: default
     half_shape:
       "[": "「"
       "]": "」"
+  __include: grammar:/hans

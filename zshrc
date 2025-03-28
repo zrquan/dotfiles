@@ -109,6 +109,7 @@ alias open="xdg-open"
 alias magit='emacs -e "(magit-status \"$(git rev-parse --show-toplevel)\")"'
 alias vv="source .venv/bin/activate"
 alias cat="bat -p --theme=base16"
+alias tldr="navi"
 
 alias ll="eza -l --icons --group-directories-first"
 alias la="eza -al --icons --group-directories-first"
