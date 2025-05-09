@@ -1,0 +1,201 @@
+{
+  "todo-tree.filtering.useBuiltInExcludes": "file excludes",
+  "explorer.excludeGitIgnore": true,
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": 2,
+  "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "window.menuBarVisibility": "toggle",
+  "extensions.ignoreRecommendations": true,
+  "workbench.preferredDarkColorTheme": "Tokyo Night",
+  "workbench.preferredLightColorTheme": "Tokyo Night Light",
+  // ========== Vim ==========
+  "vim.sneak": false,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.hlsearch": false,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.foldfix": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "d",
+        "f"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.leader": "<Space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  // 将 vim 快捷键绑定到 vscode 原生命令
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "u"
+      ],
+      "commands": [
+        "undo"
+      ]
+    },
+    {
+      "before": [
+        "<C-r>"
+      ],
+      "commands": [
+        "redo"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "o",
+        "o"
+      ],
+      "commands": [
+        "workbench.explorer.fileView.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "g"
+      ],
+      "commands": [
+        "workbench.view.scm"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "p",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.openRecent"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "h",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.selectTheme"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "]"
+      ],
+      "commands": [
+        "workbench.action.editor.nextChange"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "["
+      ],
+      "commands": [
+        "workbench.action.editor.previousChange"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "g",
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    }
+  ],
+  // ========== Git ==========
+  "git.ignoreLegacyWarning": true,
+  "git.allowForcePush": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  // ========== Editor ==========
+  "editor.suggestSelection": "first",
+  "editor.cursorBlinking": "smooth",
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hans": true
+  },
+  // ========== Extensions ==========
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": true,
+    "suppressCreatePullRequestPrompt": true
+  },
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "[ ]",
+    "[x]",
+    "IDEA"
+  ],
+  "sqlite3-editor.ui.minimizePanel": true,
+  "codeQL.telemetry.enableTelemetry": true,
+  "go.gopath": "~/.local/share/go",
+  "go.inferGopath": false,
+  "autoDocstring.docstringFormat": "sphinx-notypes",
+  "git.suggestSmartCommit": false,
+  "gitlens.views.commitDetails.files.layout": "tree",
+  "editor.indentSize": "tabSize",
+  "[proto3]": {
+    "editor.tabSize": 2
+  },
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.togglePanel",
+    "-workbench.action.quickOpen",
+  ],
+  "gitlens.launchpad.indicator.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "python.analysis.autoImportCompletions": true,
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "material-icon-theme.folders.theme": "classic",
+  "go.toolsManagement.autoUpdate": true,
+  "git.openRepositoryInParentFolders": "never",
+  "gitlens.ai.experimental.model": "openai:gpt-3.5-turbo",
+  "codetour.showMarkers": false,
+  // "editor.minimap.enabled": false,
+  "gitlens.outputLevel": "error",
+  "gitlens.graph.minimap.dataType": "lines",
+  "editor.minimap.enabled": false,
+  "git.confirmForcePush": false,
+  "editor.formatOnSave": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "jupyter.askForKernelRestart": false,
+  "workbench.colorTheme": "Tokyo Night Light",
+  "workbench.iconTheme": "vs-minimal",
+  "database-client.autoSync": true,
+  "chat.commandCenter.enabled": false,
+  "python.defaultInterpreterPath": "/bin/python",
+  "bookmarks.gutterIconFillColor": ""
+}

@@ -13,6 +13,11 @@
     ~/.vimrc: vimrc
     ~/.ideavimrc: ideavimrc
 
+    # vscode
+    ~/.config/Code/User/:
+      glob: true
+      path: config/Code/User/*.json
+
     # terminal
     ~/.local/share/konsole/zrquan.profile: local/share/konsole/zrquan.profile
     # https://github.com/catppuccin/konsole
