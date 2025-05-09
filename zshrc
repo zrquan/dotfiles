@@ -61,11 +61,11 @@ fi
 
 # Enhance fzf
 export FZF_DEFAULT_OPTS="
-  --color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796
-  --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6
+  --color=bg+:#363a4f,bg:-1,spinner:#f4dbd6,hl:#ed8796
+  --color=fg:-1,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6
   --color=marker:#b7bdf8,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796
   --color=selected-bg:#494d64
-  --marker ▏ --pointer ▌ --prompt '▌ '
+  --marker ▏ --pointer » --prompt '$ '
   --highlight-line
   --layout reverse
   --info inline-right
@@ -122,7 +122,8 @@ alias lda="eza -aDl --icons"
 alias dils="docker images | fzf --bind 'ctrl-d:become(docker rmi {3})' --header 'Press CTRL-D to delete the image'"
 # alias dcls="docker ps | fzf --bind 'ctrl-d:become(docker rm -f {1})' --header 'Press CTRL-D to remove the container'"
 
-# init jenv
-eval "$(jenv init -)"
-
 eval "$(zoxide init zsh)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

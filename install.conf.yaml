@@ -125,6 +125,7 @@
   # - ttf-wps-fonts
   # - ttf-ms-fonts            # Microsft Fonts
 
+  # only in X11
   # - libinput-gestures       # 1. sudo gpasswd -a $USER input
   # - xdotool                 # 2. libinput-gestures-setup autostart start
   # - wmctrl
@@ -154,6 +155,10 @@
   -
     command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     description: Installing Oh My Zsh
+    stdout: true
+  -
+    command: curl -s https://get.sdkman.io | bash
+    description: Installing SDKMAN
     stdout: true
   # -
   #   command: curl -fsSL https://raw.githubusercontent.com/rime/plum/master/rime-install | bash -s -- iDvel/rime-ice:others/recipes/full

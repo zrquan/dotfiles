@@ -8,6 +8,49 @@ Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Ke
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
+[dev.warp.Warp]
+_k_friendly_name=Warp
+article_print=none,Alt+Shift+A,Article print
+change-language=none,Ctrl+Shift+L,Change language
+execute_url=none,Alt+X,Trigger 'Execute'
+load_url=none,Alt+A,Trigger 'Load'
+print_selection_area=none,Alt+Shift+M,Print selection area
+print_selection_node=none,Alt+Shift+N,Print selection node
+split_url=none,Alt+S,Trigger 'Split'
+switch_mode=none,Alt+M,Switch between 'Basic' and 'Raw' mode
+trigger-translation=none,Ctrl+Shift+Y,Translate text
+
+[google-chrome]
+_k_friendly_name=google-chrome
+add-notebook=none,none,Add to Notebook
+article_print=Alt+Shift+A,Alt+Shift+A,Article print
+change-language=Ctrl+Shift+L,Ctrl+Shift+L,Change language
+execute_url=Alt+X,Alt+X,Trigger 'Execute'
+load_url=Alt+A,Alt+A,Trigger 'Load'
+next-history=none,none,Next Search History
+next-profile=none,none,Next Profile
+open-caiyun=none,none,Open LingoCloud Translate
+open-google=none,none,Open Google Translate
+open-pdf=none,none,Open current PDF in Saladict
+open-quick-search=none,none,Open or highlight standalone dict panel
+open-youdao=none,none,Open Youdao Translate
+prev-history=none,none,Previous Search History
+prev-profile=none,none,Previous Profile
+print_selection_area=Alt+Shift+M,Alt+Shift+M,Print selection area
+print_selection_node=Alt+Shift+N,Alt+Shift+N,Print selection node
+profile-1=none,none,First Profile
+profile-2=none,none,Second Profile
+profile-3=none,none,Third Profile
+profile-4=none,none,Fourth Profile
+profile-5=none,none,Fifth Profile
+search-clipboard=none,none,Search clipboard content in Standalone Panel
+split_url=Alt+S,Alt+S,Trigger 'Split'
+switch_mode=Alt+M,Alt+M,Switch between 'Basic' and 'Raw' mode
+toggle-active=none,none,Toggle inline translator
+toggle-instant=none,none,Toggle instant capture
+toggle_pause=Ctrl+.,Ctrl+.,Toggle Pause/Resume on all sites
+trigger-translation=Ctrl+Shift+Y,Ctrl+Shift+Y,Translate text
+
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
@@ -15,7 +58,7 @@ _k_friendly_name=Accessibility
 [kcm_touchpad]
 Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad
 Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad
-Toggle Touchpad=Meta+Ctrl+Zenkaku Hankaku\tTouchpad Toggle,Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Toggle Touchpad
+Toggle Touchpad=Meta+Ctrl+Zenkaku Hankaku\tTouchpad Toggle,Touchpad Toggle\tTouchpad Toggle\tMeta+Ctrl+Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Toggle Touchpad
 _k_friendly_name=Touchpad
 
 [khotkeys]
@@ -46,6 +89,7 @@ _k_friendly_name=Session Management
 
 [kwin]
 Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention
+Cube=Meta+C,Meta+C,Toggle Cube
 Cycle Overview=none,none,Cycle through Overview and Grid View
 Cycle Overview Opposite=none,none,Cycle through Grid View and Overview
 Decrease Opacity=none,,Decrease Opacity of Active Window by 5%
@@ -125,6 +169,10 @@ Walk Through Windows of Current Application Alternative (Reverse)=none,,Walk Thr
 Window Above Other Windows=none,,Keep Window Above Others
 Window Below Other Windows=none,,Keep Window Below Others
 Window Close=Alt+F4,Alt+F4,Close Window
+Window Custom Quick Tile Bottom=none,,Custom Quick Tile Window to the Bottom
+Window Custom Quick Tile Left=none,,Custom Quick Tile Window to the Left
+Window Custom Quick Tile Right=none,,Custom Quick Tile Window to the Right
+Window Custom Quick Tile Top=none,,Custom Quick Tile Window to the Top
 Window Fullscreen=none,,Make Window Fullscreen
 Window Grow Horizontal=none,,Expand Window Horizontally
 Window Grow Vertical=none,,Expand Window Vertically
@@ -196,6 +244,7 @@ Window to Screen 5=none,,Move Window to Screen 5
 Window to Screen 6=none,,Move Window to Screen 6
 Window to Screen 7=none,,Move Window to Screen 7
 _k_friendly_name=KWin
+disableInputCapture=Meta+Shift+Esc,Meta+Shift+Esc,Disable Active Input Capture
 view_actual_size=none,Meta+0,Zoom to Actual Size
 view_zoom_in=Meta++\tMeta+=,Meta++\tMeta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
@@ -231,7 +280,7 @@ powerProfile=Meta+B\tBattery,Battery\tMeta+B,Switch Power Profile
 _k_friendly_name=plasmashell
 activate application launcher=Meta,Meta\tAlt+F1,Activate Application Launcher
 activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
-activate task manager entry 10=Meta+0,Meta+0,Activate Task Manager Entry 10
+activate task manager entry 10=Meta+0,,Activate Task Manager Entry 10
 activate task manager entry 2=Meta+2,Meta+2,Activate Task Manager Entry 2
 activate task manager entry 3=Meta+3,Meta+3,Activate Task Manager Entry 3
 activate task manager entry 4=Meta+4,Meta+4,Activate Task Manager Entry 4
@@ -242,8 +291,10 @@ activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 3=none,none,Activate Application Launcher Widget
 activate widget 37=none,none,Activate Network speed Widget
-activate widget 4=Alt+F1,none,Activate Application Launcher Widget
 activate widget 43=none,none,Activate Task Manager Widget
+activate widget 55=none,none,Activate Icons-and-Text Task Manager Widget
+activate widget 56=none,none,Activate Icons-and-Text Task Manager Widget
+activate widget 73=Alt+F1,none,Activate Application Launcher Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
@@ -253,7 +304,7 @@ edit_clipboard=none,none,Edit Contents…
 manage activities=Meta+Q,Meta+Q,Show Activity Switcher
 next activity=none,none,Walk through activities
 previous activity=none,none,Walk through activities (Reverse)
-repeat_action=Meta+Ctrl+R,Meta+Ctrl+R,Manually Invoke Action on Current Clipboard
+repeat_action=Meta+Ctrl+R,,Manually Invoke Action on Current Clipboard
 show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop
 show-barcode=none,,Show Barcode…
 show-on-mouse-pos=Meta+V,Meta+V,Show Clipboard Items at Mouse Position
@@ -268,8 +319,18 @@ _launch=Ctrl+Alt+E
 [services][org-capture.desktop]
 _launch=Ctrl+Alt+N
 
+[services][org.kde.kscreen.desktop]
+ShowOSD=Meta+P\tDisplay
+
 [services][org.kde.spectacle.desktop]
 RecordWindow=none
+
+[token_chromium_8F6F1C78DE9B4530AC39021CD6472EF8]
+_k_friendly_name=token_chromium_8F6F1C78DE9B4530AC39021CD6472EF8
+execute_url=none,Alt+X,Trigger 'Execute'
+load_url=none,Alt+A,Trigger 'Load'
+split_url=none,Alt+S,Trigger 'Split'
+switch_mode=none,Alt+M,Switch between 'Basic' and 'Raw' mode
 
 [yakuake]
 _k_friendly_name=Yakuake
