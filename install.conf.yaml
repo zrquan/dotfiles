@@ -26,6 +26,10 @@
     ~/.tmux.conf: tmux.conf
     ~/.p10k.zsh: p10k.zsh
     ~/.config/navi/config.yaml: config/navi/config.yaml
+    ~/.config/warp-terminal/: config/warp-terminal/
+    ~/.local/share/warp-terminal/:
+      force: true
+      path: local/share/warp-terminal/
 
     # input device
     ~/.config/environment.d/: config/environment.d/
@@ -71,18 +75,23 @@
 
 - yay:
   - daed
-  - ttf-lxgw-wenkai
-  - noto-fonts-emoji
   - fcitx5-im
   - fcitx5-rime
   - wl-clipboard
   - yakuake
-  - zsh-theme-powerlevel10k-git
   - tmux
   - docker
   - docker-compose
   - google-chrome
   - thunderbird-bin
+
+  ## UI
+  - ttf-lxgw-wenkai
+  - noto-fonts-emoji
+  - nerd-fonts-sarasa-term      # optional
+  - zsh-theme-powerlevel10k-git
+  - papirus-icon-theme
+  - papirus-folders-git
 
   ## Python
   - uv
