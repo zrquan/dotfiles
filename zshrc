@@ -61,16 +61,18 @@ fi
 
 # Enhance fzf
 export FZF_DEFAULT_OPTS="
-  --color=bg+:#363a4f,bg:-1,spinner:#f4dbd6,hl:#ed8796
-  --color=fg:-1,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6
-  --color=marker:#b7bdf8,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796
-  --color=selected-bg:#494d64
   --marker ▏ --pointer » --prompt '$ '
   --highlight-line
   --layout reverse
   --info inline-right
   --border
   --multi"
+# fzf color theme
+# copy from https://github.com/tinted-theming/tinted-fzf
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
+" --color=bg+:#3c3836,bg:#1d2021,spinner:#8ec07c,hl:#83a598"\
+" --color=fg:#bdae93,header:#83a598,info:#fabd2f,pointer:#8ec07c"\
+" --color=marker:#8ec07c,fg+:#ebdbb2,prompt:#fabd2f,hl+:#83a598"
 
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
