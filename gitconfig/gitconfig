@@ -29,3 +29,6 @@
     #
     # Setting to git 2.0 default to suppress warning message
     default = simple
+[http]
+	version = HTTP/1.1
+	postBuffer = 524288000

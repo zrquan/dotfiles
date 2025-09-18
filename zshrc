@@ -1,3 +1,5 @@
+# zmodload zsh/zprof
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -112,6 +114,9 @@ alias magit='emacs -e "(magit-status \"$(git rev-parse --show-toplevel)\")"'
 alias vv="source .venv/bin/activate"
 alias cat="bat -p --theme=base16"
 alias tldr="navi"
+alias krestart="killall plasmashell && kstart5 plasmashell"
+alias c="code"
+alias fd="fd --hidden --no-ignore"
 
 alias ll="eza -l --icons --group-directories-first"
 alias la="eza -al --icons --group-directories-first"
@@ -129,3 +134,12 @@ eval "$(zoxide init zsh)"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# nvm 严重拖慢 zsh 的加载时间
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+# zprof

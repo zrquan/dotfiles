@@ -37,7 +37,6 @@
     ~/.config/kxkbrc:
       force: true
       path: config/kxkbrc
-    ~/.config/kglobalshortcutsrc: config/kglobalshortcutsrc
 
     # 㞢
     ~/.config/fcitx5/profile:
@@ -88,7 +87,6 @@
   ## UI
   - ttf-lxgw-wenkai
   - noto-fonts-emoji
-  - nerd-fonts-sarasa-term      # optional
   - zsh-theme-powerlevel10k-git
   - papirus-icon-theme
   - papirus-folders-git
@@ -102,7 +100,6 @@
   - go
 
   ## Terminal tools
-  - zoxide
   - bat       # better cat
   - btop      # better [h]top
   - fd        # better find
@@ -112,9 +109,9 @@
   - eza       # better ls
 
   ## Emacs
-  - emacs-nativecomp
-  - nodejs
-  - npm
+  - emacs
+  # - nodejs
+  # - npm
   - stardict
   - sdcv
 
@@ -129,7 +126,6 @@
   # - visual-studio-code-bin
   # - wemeet-bin
   # - baidunetdisk-bin
-  # - dbeaver
 
   # - jenv
   # - maven
@@ -173,7 +169,6 @@
   -
     command: curl -s https://get.sdkman.io | bash
     description: Installing SDKMAN
-    stdout: true
   # -
   #   command: curl -fsSL https://raw.githubusercontent.com/rime/plum/master/rime-install | bash -s -- iDvel/rime-ice:others/recipes/full
   #   description: Rime配置：雾凇拼音 | 长期维护的简体词库

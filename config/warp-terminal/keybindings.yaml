@@ -1,5 +1,6 @@
 ---
-"terminal:clear_blocks": ctrl-shift-L
-"editor_view:move_to_line_end": ctrl-e
 "editor_view:select_all": ctrl-shift-A
+"terminal:clear_blocks": ctrl-shift-L
 "editor_view:move_to_line_start": ctrl-a
+"input:open_completion_suggestions": tab
+"editor_view:move_to_line_end": ctrl-e
