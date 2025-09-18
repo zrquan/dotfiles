@@ -45,5 +45,15 @@
         "key": "ctrl+alt+k",
         "command": "-bookmarks.toggle",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+1",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
     }
 ]
