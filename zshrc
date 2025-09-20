@@ -1,57 +1,30 @@
 # zmodload zsh/zprof
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# Powerlevel10k instant prompt (keep near top)
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh  # load personal prompt config
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme || echo "Install powerlevel10k first (use yay)"
 
-# Add .dotfiles/bin directory to $PATH.
-export PATH=$HOME/.local/bin:$HOME/.dotfiles/bin:$HOME/.config/emacs/bin:$PATH
+# Basic paths
+export PATH="$HOME/.local/bin:$HOME/.dotfiles/bin:$HOME/.config/emacs/bin:$PATH"
 
-# Path to your oh-my-zsh installation.
+# Go path
+export GOPATH="$HOME/.local/share/go"
+export PATH="$GOPATH/bin:$PATH"
+
+# Locale
+export LANG=en_US.UTF-8
+
+# Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
-
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
-
-# Uncomment one of the following lines to change the auto-update behavior
-zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
-
-# Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# You can also set it to another string to have that shown instead of the default red dots.
-# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
-# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+zstyle ':omz:update' mode disabled
 plugins=(git emacs fzf docker docker-compose)
+source "$ZSH/oh-my-zsh.sh"
 
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
+# Clipboard helper based on session type
 if [ "$XDG_SESSION_TYPE" = "x11" ]; then
   COPY="xclip -sel clip"
 elif [ "$XDG_SESSION_TYPE" = "wayland" ]; then
@@ -70,43 +43,31 @@ export FZF_DEFAULT_OPTS="
   --border
   --multi"
 # fzf color theme
-# copy from https://github.com/tinted-theming/tinted-fzf
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
 " --color=bg+:#3c3836,bg:#1d2021,spinner:#8ec07c,hl:#83a598"\
 " --color=fg:#bdae93,header:#83a598,info:#fabd2f,pointer:#8ec07c"\
 " --color=marker:#8ec07c,fg+:#ebdbb2,prompt:#fabd2f,hl+:#83a598"
-
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
   --height 60%
   --walker-skip .git,node_modules,target
   --preview 'bat -n --color=always {}'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
-
 # CTRL-Y to copy the command into clipboard using pbcopy
 export FZF_CTRL_R_OPTS="
   --bind 'ctrl-y:execute-silent(echo -n {2..} | $COPY)+abort'
   --color header:italic
   --header 'Press CTRL-Y to copy command into clipboard'"
 
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
-export GOPATH=~/.local/share/go
-export PATH=$GOPATH/bin:$PATH
-
-# Preferred editor for local and remote sessions
+# Editor: use vim over SSH, emacs locally
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
   export EDITOR='emacs'
 fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs, plugins, and themes.
-alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'" # Pipe my public key to clipboard
+# Aliases
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 alias listen="lsof -P -i -n | fzf" # 查看网络连接
 alias psf="ps aux | fzf"
 alias open="xdg-open"
@@ -117,6 +78,7 @@ alias tldr="navi"
 alias krestart="killall plasmashell && kstart5 plasmashell"
 alias c="code"
 alias fd="fd --hidden --no-ignore"
+alias dils="docker images | fzf --bind 'ctrl-d:become(docker rmi {3})' --header 'Press CTRL-D to delete the image'"
 
 alias ll="eza -l --icons --group-directories-first"
 alias la="eza -al --icons --group-directories-first"
@@ -126,20 +88,36 @@ alias lfa="eza -afl --icons"
 alias ld="eza -Dl --icons"
 alias lda="eza -aDl --icons"
 
-alias dils="docker images | fzf --bind 'ctrl-d:become(docker rmi {3})' --header 'Press CTRL-D to delete the image'"
-# alias dcls="docker ps | fzf --bind 'ctrl-d:become(docker rm -f {1})' --header 'Press CTRL-D to remove the container'"
+# compinit (ensure function completion)
+fpath+=~/.zfunc
+autoload -Uz compinit
+# avoid insecure completion warnings
+if [[ -w ~/.zcompdump || ! -f ~/.zcompdump ]]; then
+  compinit -u
+else
+  compinit
+fi
 
+# zoxide is smarter cd
 eval "$(zoxide init zsh)"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# nvm: lazy load to avoid slowing shell startup
+export NVM_DIR="$HOME/.nvm"
+nvm() { command nvm "$@"; }  # placeholder so typing nvm won't fail
+autoload -Uz add-zsh-hook
+_load_nvm() {
+  if [[ -s "$NVM_DIR/nvm.sh" ]]; then
+    source "$NVM_DIR/nvm.sh"
+  fi
+  if [[ -s "$NVM_DIR/bash_completion" ]]; then
+    source "$NVM_DIR/bash_completion"
+  fi
+  add-zsh-hook -d precmd _load_nvm
+}
+add-zsh-hook precmd _load_nvm
+
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# nvm 严重拖慢 zsh 的加载时间
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 # zprof
