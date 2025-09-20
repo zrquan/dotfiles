@@ -67,6 +67,7 @@
       path: config/lattedockrc
     # FIXME: layout文件使用软链接无法被识别
     ~/.config/latte/Zrquan.layout.latte: config/latte/Zrquan.layout.latte
+    ~/.config/kwinrulesrc: config/kwinrulesrc
 
 - create:
     - ~/Applications/
