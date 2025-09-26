@@ -370,5 +370,6 @@
   ],
   "python.ty.disableLanguageServices": true,
   "workbench.colorTheme": "Gruvbox Dark Hard",
-  "todo-tree.highlights.enabled": false
+  "todo-tree.highlights.enabled": false,
+  "python.analysis.typeCheckingMode": "standard"
 }
