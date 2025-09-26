@@ -319,23 +319,6 @@
       "profileName": "autosec",
       "expiresOn": 0,
       "sshPassword": ""
-    },
-    {
-      "id": "FC862916-168C-49B9-A272-D753C41C1582",
-      "groupId": "F9C5EA43-5EBE-4952-A7DD-E0EAFFBF82F0",
-      "authenticationType": "SqlLogin",
-      "connectTimeout": 15,
-      "applicationName": "vscode-pgsql",
-      "clientEncoding": "utf8",
-      "sslmode": "prefer",
-      "savePassword": true,
-      "server": "192.168.23.191",
-      "user": "root",
-      "password": "",
-      "database": "postgres",
-      "profileName": "autosec-remote",
-      "sshPassword": "",
-      "expiresOn": 0
     }
   ],
   "indentRainbow.lightIndicatorStyleLineWidth": 4,

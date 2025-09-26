@@ -21,7 +21,9 @@ export LANG=en_US.UTF-8
 export ZSH="$HOME/.oh-my-zsh"
 HYPHEN_INSENSITIVE="true"
 zstyle ':omz:update' mode disabled
-plugins=(git emacs fzf docker docker-compose)
+zstyle ':omz:plugins:eza' 'git-status' yes
+zstyle ':omz:plugins:eza' 'icons' yes
+plugins=(git emacs fzf docker docker-compose eza)
 source "$ZSH/oh-my-zsh.sh"
 
 # Clipboard helper based on session type
@@ -79,14 +81,6 @@ alias krestart="killall plasmashell && kstart5 plasmashell"
 alias c="code"
 alias fd="fd --hidden --no-ignore"
 alias dils="docker images | fzf --bind 'ctrl-d:become(docker rmi {3})' --header 'Press CTRL-D to delete the image'"
-
-alias ll="eza -l --icons --group-directories-first"
-alias la="eza -al --icons --group-directories-first"
-alias lt="eza -lr --sort=modified --icons"
-alias lf="eza -fl --icons"
-alias lfa="eza -afl --icons"
-alias ld="eza -Dl --icons"
-alias lda="eza -aDl --icons"
 
 # compinit (ensure function completion)
 fpath+=~/.zfunc
