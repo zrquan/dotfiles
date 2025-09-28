@@ -23,7 +23,7 @@ HYPHEN_INSENSITIVE="true"
 zstyle ':omz:update' mode disabled
 zstyle ':omz:plugins:eza' 'git-status' yes
 zstyle ':omz:plugins:eza' 'icons' yes
-plugins=(git emacs fzf docker docker-compose eza)
+plugins=(emacs fzf docker docker-compose eza)
 source "$ZSH/oh-my-zsh.sh"
 
 # Clipboard helper based on session type
