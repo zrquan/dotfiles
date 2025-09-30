@@ -23,7 +23,7 @@ HYPHEN_INSENSITIVE="true"
 zstyle ':omz:update' mode disabled
 zstyle ':omz:plugins:eza' 'git-status' yes
 zstyle ':omz:plugins:eza' 'icons' yes
-plugins=(emacs fzf docker docker-compose eza)
+plugins=(git emacs fzf docker docker-compose eza)
 source "$ZSH/oh-my-zsh.sh"
 
 # Clipboard helper based on session type
@@ -44,11 +44,11 @@ export FZF_DEFAULT_OPTS="
   --info inline-right
   --border
   --multi"
-# fzf color theme
+# ref: https://github.com/tinted-theming/tinted-fzf/blob/main/sh/base16-tokyo-city-terminal-dark.sh
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:#3c3836,bg:#1d2021,spinner:#8ec07c,hl:#83a598"\
-" --color=fg:#bdae93,header:#83a598,info:#fabd2f,pointer:#8ec07c"\
-" --color=marker:#8ec07c,fg+:#ebdbb2,prompt:#fabd2f,hl+:#83a598"
+" --color=bg+:#1d252c,bg:#171d23,spinner:#70e1e8,hl:#539afc"\
+" --color=fg:#b7c5d3,header:#539afc,info:#ebbf83,pointer:#70e1e8"\
+" --color=marker:#70e1e8,fg+:#f6f6f8,prompt:#ebbf83,hl+:#539afc"
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
   --height 60%
