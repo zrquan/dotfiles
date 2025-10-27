@@ -1,12 +1,18 @@
 [$Version]
 update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
 
+[3da31854-afd6-42f2-b488-a5a5e584f0b6]
+Description=yakuake
+fsplevelrule=2
+wmclass=org.kde.yakuake
+wmclassmatch=2
+
 [General]
-count=1
-rules=d161f985-0465-4d69-bb5e-d3a49ae47367
+count=2
+rules=d161f985-0465-4d69-bb5e-d3a49ae47367,3da31854-afd6-42f2-b488-a5a5e584f0b6
 
 [d161f985-0465-4d69-bb5e-d3a49ae47367]
-Description=Hide emacs titlebar
+Description=emacs
 noborder=true
 noborderrule=2
 wmclass=Emacs
