@@ -25,7 +25,6 @@
     ~/.config/yakuakerc: config/yakuakerc
     ~/.tmux.conf: tmux.conf
     ~/.p10k.zsh: p10k.zsh
-    ~/.config/navi/config.yaml: config/navi/config.yaml
     ~/.config/warp-terminal/: config/warp-terminal/
     ~/.local/share/warp-terminal/:
       force: true
