@@ -19,7 +19,6 @@ keep-open=Ctrl+Alt+D
 [Window]
 Height=80
 KeepOpen=false
-Screen=2
 ShowSystrayIcon=false
 ShowTabBar=false
 ShowTitleBar=false

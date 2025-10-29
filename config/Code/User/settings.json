@@ -293,7 +293,6 @@
     "*.s3db": "${capture}.${extname}-*"
   },
   "notebook.output.scrolling": true,
-  "python.defaultInterpreterPath": "/bin/python",
   "task.allowAutomaticTasks": "on",
   "pgsql.serverGroups": [
     {
@@ -329,7 +328,7 @@
   "workbench.preferredLightColorTheme": "Gruvbox Light Medium",
   "icontheme.darkIconTheme": "catppuccin-mocha",
   "icontheme.lightIconTheme": "catppuccin-latte",
-  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.iconTheme": "catppuccin-latte",
   "indentRainbow.ignoreErrorLanguages": [
     "*"
   ],
@@ -351,7 +350,8 @@
     "tamasfe.even-better-toml",
     "yzhang.markdown-all-in-one"
   ],
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Gruvbox Light Medium",
   "todo-tree.highlights.enabled": false,
   "ty.disableLanguageServices": true,
+  "python.analysis.includeAliasesFromUserFiles": true,
 }
