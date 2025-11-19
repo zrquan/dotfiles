@@ -7,13 +7,18 @@ fsplevelrule=2
 wmclass=org.kde.yakuake
 wmclassmatch=2
 
-[General]
-count=2
-rules=d161f985-0465-4d69-bb5e-d3a49ae47367,3da31854-afd6-42f2-b488-a5a5e584f0b6
-
-[d161f985-0465-4d69-bb5e-d3a49ae47367]
-Description=emacs
+[9d8c2d2d-4936-4064-815f-de16499dd7f6]
+Description=doom-capture
 noborder=true
 noborderrule=2
+placementrule=2
+size=1540,1230
+sizerule=2
+title=doom-capture
+titlematch=1
 wmclass=Emacs
 wmclassmatch=1
+
+[General]
+count=2
+rules=3da31854-afd6-42f2-b488-a5a5e584f0b6,9d8c2d2d-4936-4064-815f-de16499dd7f6
